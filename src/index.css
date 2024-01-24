@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url('../images/IDR_THEME_NTP_BACKGROUND.png') !important;
+  backdrop-filter: blur(2px);
+  background-position: center !important;
+}
