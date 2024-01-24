@@ -3,7 +3,7 @@
 <div align=center>
   <p style='font-size: 25px; text-decoration: underline; font-weight: bold'>Ferramentas:</p>
   <a href="https://github.com/Joao-Vtr-Oliveira/todo-list-login">
-    <img src="https://skillicons.dev/icons?i=ts,react,tailwind" />
+    <img src="https://skillicons.dev/icons?i=ts,react,tailwind,redux" />
   </a>
 </div>
 
@@ -11,8 +11,12 @@
 
 <p align="center" style='font-size: 25px; text-decoration: underline; font-weight: bold'>Descrição:</p>
 
-Dois projetos em um. Sendo eles, um de To-Do List e outro utilizando a [API da Marvel](https://developer.marvel.com/). Para praticar funcionalidades do React, TypeScript, Tailwind, ChakraUI e a lib `react-router-dom`. Contém um funcionamento simples de Login para prática dos hooks `createContext/useContext`.
+Uma adição do [projeto original](https://github.com/Joao-Vtr-Oliveira/ToDoList-Login-MarvelApi-Context) com a implementação do Redux.
 
+A estrutura do projeto segue o seguinte formato: Uma tela de Login, uma de To-Do-List e outra tela que contém informações providas da [API da Marvel](https://developer.marvel.com/).
+
+Esse projeto foi feito para praticar as funcionalidades do React, TypeScript, Tailwind, ChakraUI, a lib `react-router-dom` e o Redux.
+O Redux é tanto aplicado na estrutura de Login, quanto nas telas utilizando a API da Marvel.
 
 
 ---
