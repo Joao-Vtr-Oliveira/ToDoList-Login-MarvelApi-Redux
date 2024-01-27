@@ -19,7 +19,7 @@ function Svg({ type, className }: {type: 'home' | 'disconnect', className?: stri
   const clickHandle = () => {
     if(type === 'home') navigate('/home');
     if(type === 'disconnect'){
-      navigate('/');
+      navigate('//');
       dispatch(cleanInfo());
       localStorage.removeItem('user');
       localStorage.removeItem('sessionToken');

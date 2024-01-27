@@ -11,7 +11,7 @@ import CharacterPage from "./pages/Marvel/CharacterPage";
 function App() {
   return (
     <ChakraProvider>
-        <BrowserRouter>
+        <BrowserRouter basename='ToDoList-Login-MarvelApi-Redux'>
           <div className="h-screen flex flex-col justify-center items-center">
             <Header />
             <Routes>

@@ -12,7 +12,7 @@ const SessionCheckHOC = (WrappedComponent: React.ComponentType, delay: number = 
         if (!sessionToken) {
           console.log("Nenhum token de sessão encontrado, redirecionando...");
           setTimeout(() => {
-            navigate("/");
+            navigate("//");
           }, delay);
         } else {
           console.log("Token de sessão encontrado:",sessionToken);
