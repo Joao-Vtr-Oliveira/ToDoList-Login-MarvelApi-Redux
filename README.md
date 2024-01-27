@@ -18,6 +18,8 @@ A estrutura do projeto segue o seguinte formato: Uma tela de Login, uma de To-Do
 Esse projeto foi feito para praticar as funcionalidades do React, TypeScript, Tailwind, ChakraUI, a lib `react-router-dom` e o Redux.
 O Redux é tanto aplicado na estrutura de Login, quanto nas telas utilizando a API da Marvel.
 
+Teste o projeto [aqui](https://joao-vtr-oliveira.github.io/ToDoList-Login-MarvelApi-Redux/).
+
 
 ---
 
