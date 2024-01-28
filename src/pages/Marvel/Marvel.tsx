@@ -32,7 +32,6 @@ function Marvel() {
     dispatch(marvelReduxRequest(offset));
   }, [offset]);
   
-  console.log(characters);
   const renderPageNumbers = () => {
     const pageNumbers = [];
     const totalPages = 1563;

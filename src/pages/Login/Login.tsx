@@ -31,7 +31,6 @@ const LoginPage = () => {
       isClosable: false,
     });
     const info = await dispatch(fetchToken({ user, password }));
-    console.log(info);
     toast.close(loadingToastId);
     if (info.type === "login/fetchToken/fulfilled") {
       navigate("/home");

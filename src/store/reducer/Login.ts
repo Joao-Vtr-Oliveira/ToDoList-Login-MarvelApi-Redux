@@ -33,7 +33,7 @@ const slice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchToken.pending, () => {
-        console.log("started");
+        
       })
       .addCase(fetchToken.fulfilled, (state, action: PayloadAction<Data>) => {
         state.data = action.payload;
