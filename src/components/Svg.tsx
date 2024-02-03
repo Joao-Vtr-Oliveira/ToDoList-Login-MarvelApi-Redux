@@ -1,9 +1,13 @@
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { cleanInfo } from "../store/reducer/Login";
+import { Icon, IconProps } from '@chakra-ui/react';
 
+type types = {
+  type: 'home' | 'disconnect';
+}
 
-function Svg({ type, className }: {type: 'home' | 'disconnect', className?: string }) {
+const Svg: React.FC<types & IconProps> = ({ type, ...props }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   let path = '';
@@ -26,16 +30,17 @@ function Svg({ type, className }: {type: 'home' | 'disconnect', className?: stri
     }
   }
   return (
-    <svg
-      className={`hover:fill-current cursor-pointer ${className}`}
+    <Icon
+      cursor='pointer'
       xmlns="http://www.w3.org/2000/svg"
-      width="40"
-      height="40"
+      width="10"
+      height="10"
       viewBox="0 0 24 24"
       onClick={clickHandle}
+      {...props}
     >
       <path d={path} />
-    </svg>
+    </Icon>
   );
 }
 

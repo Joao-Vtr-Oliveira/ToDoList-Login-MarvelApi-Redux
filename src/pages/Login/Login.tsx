@@ -63,7 +63,7 @@ const LoginPage = () => {
 
   return (
     <Flex align="center" justifyContent="center" height="full" width="full">
-      <Card className="w-4/5 xl:w-2/5">
+      <Card w={['80%', '80%', '80%', '80%', '40%']}>
         <CardBody>
           <Flex flexDirection="column" gap="10" padding="5">
             <Input

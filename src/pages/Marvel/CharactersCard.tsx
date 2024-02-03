@@ -4,6 +4,7 @@ import {
   CardFooter,
   CardHeader,
   Heading,
+  Image,
   Text,
 } from "@chakra-ui/react";
 import { CharacterType } from "../../types/CharacterType";
@@ -22,10 +23,10 @@ export function CharactersCard({ data }: { data: CharacterType }) {
           </Heading>
         </CardHeader>
         <CardBody display="flex" alignItems="center" justifyContent="center">
-          <img
+          <Image
             width="100%"
-            height={200}
-            className="rounded"
+            height={'500px'}
+            borderRadius='0.25rem'
             src={`${data.thumbnail.path}/portrait_fantastic.${data.thumbnail.extension}`}
             alt={data.name}
           />

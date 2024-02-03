@@ -1,3 +1,4 @@
+import { Box, Icon } from '@chakra-ui/react';
 import { svgType } from "../types/SvgType";
 
 function AnchorSvg({ type, target='_blank' }: svgType) {
@@ -22,17 +23,17 @@ function AnchorSvg({ type, target='_blank' }: svgType) {
   }
 
   return (
-    <a target={target} href={href}>
-      <svg
-        className="hover:text-white hover:fill-current"
+    <Box as='a' target={target} href={href}>
+      <Icon
+        _hover={{textColor: 'white', fill: 'currentColor'}}
         xmlns="http://www.w3.org/2000/svg"
         width="30"
         height="25"
         viewBox="0 0 24 24"
       >
         <path d={path} />
-      </svg>
-    </a>
+      </Icon>
+    </Box>
   );
 }
 

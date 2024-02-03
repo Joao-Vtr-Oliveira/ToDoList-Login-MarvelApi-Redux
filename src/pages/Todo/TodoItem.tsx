@@ -1,31 +1,50 @@
-import { useState } from "react";
-import { TodoType } from "../../types/TodoType";
-import { Checkbox } from "@chakra-ui/react";
+import { useState } from 'react';
+import { TodoType } from '../../types/TodoType';
+import { Box, Checkbox, Text } from '@chakra-ui/react';
 
 type TodoItemProps = {
-  todo: TodoType;
+	todo: TodoType;
 };
 
 function TodoItem({ todo }: TodoItemProps) {
-  const [checked, setChecked] = useState(false);
+	const [checked, setChecked] = useState(false);
 
-  return (
-    <div className="text-gray-500 w-full h-auto font-mono text-lg flex items-center">
-      <Checkbox
-        defaultChecked={checked}
-        onChange={() => setChecked(!checked)}
-        colorScheme="purple"
-        className="ml-3 mr-3 h-6 w-6"
-      />
-      <span
-        className={
-          checked ? "line-through text-custom-purple font-bold" : "no-underline"
-        }
-      >
-        {todo.text}
-      </span>
-    </div>
-  );
+	return (
+		<Box
+			textColor='grat.500'
+			w='100%'
+			h='auto'
+			fontFamily='monospace'
+			fontSize='1.125rem'
+			lineHeight='1.75rem'
+			display='flex'
+			alignItems='center'
+		>
+			<Checkbox
+				defaultChecked={checked}
+				onChange={() => setChecked(!checked)}
+				colorScheme='purple'
+				marginLeft='0.75rem'
+				marginRight='0.75rem'
+				h='1.5rem'
+				w='1.5rem'
+			/>
+			<Text
+				as='span'
+				style={
+					checked
+						? {
+								color: '#570FA0',
+								textDecorationLine: 'line-through',
+								fontWeight: 700,
+						  }
+						: { textDecorationLine: 'none' }
+				}
+			>
+				{todo.text}
+			</Text>
+		</Box>
+	);
 }
 
 export default TodoItem;
